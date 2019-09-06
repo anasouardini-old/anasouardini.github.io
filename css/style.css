@@ -5,11 +5,11 @@
 
 ::-moz-selection {
   background: #D89738;
-  color: #444; }
+  color: #222; }
 
 ::selection {
   background: #D89738;
-  color: #444; }
+  color: #222; }
 
 body {
   font-family: 'Rubik', Sans-serif; }
@@ -28,14 +28,14 @@ body {
 .welcome {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(#066, #012);
+  background: #0070FF;
   height: 100vh; }
   .welcome .logo_container {
     width: 300px;
     border-radius: 10px;
     margin: 12vh auto 0 auto;
     font-size: 30px;
-    color: #CF7118;
+    color: #F29441;
     display: flex;
     justify-content: space-between; }
     .welcome .logo_container .logo {
@@ -50,26 +50,23 @@ body {
   .welcome .welcome_text {
     margin: 14vh auto 0 auto;
     text-align: center;
-    color: #999;
+    color: #EEE;
     line-height: 35px;
     font-size: 25px;
     font-family: 'Righteous', cursive; }
     .welcome .welcome_text b a {
-      color: #CF7118;
+      color: #F29441;
       text-decoration: none;
       text-transform: capitalize; }
     .welcome .welcome_text b span {
-      text-transform: capitalize; }
-    .welcome .welcome_text b:nth-of-type(2) {
-      color: #444;
-      background: #D89738; }
+      text-transform: uppercase; }
   .welcome .socialMedia {
     margin: 10vh 0 auto 0; }
     .welcome .socialMedia .icons {
       margin: 40px auto 0 auto;
       display: inline-block; }
       .welcome .socialMedia .icons a {
-        color: #CF7118;
+        color: #F29441;
         text-decoration: none; }
       .welcome .socialMedia .icons .fa {
         margin: 0 15px 0 15px;
@@ -87,12 +84,12 @@ body {
       margin: 0 auto;
       text-align: center;
       font-size: 16px;
-      color: #CF7118; }
+      color: #F29441; }
       .welcome .flesh_container .myWorkFlesh .flesh {
         margin-top: 10px;
         position: relative; }
         .welcome .flesh_container .myWorkFlesh .flesh .r_flesh, .welcome .flesh_container .myWorkFlesh .flesh .l_flesh {
-          background: #CF7118;
+          background: #F29441;
           width: 15px;
           height: 3px;
           position: absolute;
@@ -177,75 +174,41 @@ body {
           color: #b56315; }
 
 .work {
-  background: #089;
+  background: #FFF;
   text-align: center;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .work::before {
     position: absolute;
     left: 0;
     content: '';
-    border-right: 48.5vw solid transparent;
-    border-left: 48.5vw solid transparent;
-    border-top: 60px solid #012; }
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+    border-top: 60px solid #0070FF; }
   .work h2 {
     font-size: 35px;
     margin: 180px 0 140px 0;
-    color: #E36E17; }
+    color: #444; }
   .work .projectContainer {
     margin-bottom: 140px;
     color: #BBB; }
     .work .projectContainer h3 {
-      color: #C96215;
+      color: #555;
       font-size: 25px; }
     .work .projectContainer .projectImg {
       width: 400px;
-      height: 400px;
-      background-image: url("../imgs/pr.png");
+      height: 350px;
       background-size: cover;
       overflow: hidden;
+      box-shadow: 0 0 15px 0 #CCC;
       border-radius: 10px;
       margin: 40px auto;
-      color: rgba(2, 2, 2, 0); }
-      .work .projectContainer .projectImg:hover .desc {
-        visibility: visible;
-        transition: all .5s ease;
-        opacity: 1;
-        padding-top: 40%;
-        color: #999; }
-      .work .projectContainer .projectImg .desc {
-        height: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 80%;
-        line-height: 30px;
-        font-size: 18px;
-        text-align: center;
-        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9), black);
-        visibility: hidden;
-        transition: all .5s ease;
-        opacity: .0; }
-    .work .projectContainer .testimonials {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 10px 0;
-      color: #DDD; }
-      .work .projectContainer .testimonials .quote blockquote {
-        margin: 20px 0 20px 0;
-        font-size: 20px;
-        color: #DDD; }
-      .work .projectContainer .testimonials .client {
-        margin: auto;
-        overflow: hidden;
-        display: inline-block; }
-        .work .projectContainer .testimonials .client img {
-          width: 60px;
-          height: 60px;
-          float: left; }
-        .work .projectContainer .testimonials .client .clientDesc {
-          font-size: 17px;
-          font-weight: bolder;
-          float: left;
-          margin: 20px 0 0 10px;
-          color: #C96215; }
+      color: rgba(2, 2, 2, 0);
+      cursor: pointer; }
+  .work .projectContainer1 .projectImg {
+    background-image: url("../imgs/project1.png"); }
+  .work .projectContainer2 .projectImg {
+    background-image: url("../imgs/project2.png"); }
 
 .contact {
   background: linear-gradient(#C77A35, #804, #603);
@@ -257,7 +220,7 @@ body {
     content: '';
     border-right: 50vw solid transparent;
     border-left: 50vw solid transparent;
-    border-top: 60px solid #089; }
+    border-top: 60px solid #FFF; }
   .contact h2 {
     font-size: 40px;
     margin: 180px 0 140px 0;
@@ -332,7 +295,7 @@ body {
   font-size: 16px;
   letter-spacing: .5px;
   height: 40px;
-  color: #BF7533;
+  color: #EEE;
   padding-top: 8px; }
   .footer span {
     margin-right: 15px; }
