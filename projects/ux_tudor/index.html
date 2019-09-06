@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>tudor</title>
+    <!--link(rel='icon', href='imgs/icon.png')-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="headerContainer">
+            <div class="navBar">
+                <div class="logo"></div>
+                <div class="menu"><a class="home" href="/">home</a><a class="teach" href="/teach">teach</a><a class="donate" href="donate">donate</a><a class="aboutUs" href="/aboutUs">about us</a><a class="myProfile" href="/myProfile">my profile</a></div>
+            </div>
+            <div class="headline">
+                <h1>Be one of the 250 000</h1>
+                <p>teachers needed in Nigerian schools</p>
+            </div>
+            <div class="startTeaching">
+                <h2>Find a teaching opportunity</h2>
+                <div class="selectElement"><select>
+                        <option value="be a one time donaition">Pick a course</option>
+                    </select><i class="fas fa-angle-down"></i></div><button class="submit">Start Teaching</button>
+            </div>
+        </div>
+    </div>
+    <div class="opportunities">
+        <div class="container">
+            <p>A quick preview of local communities looking for your help</p>
+            <div class="items">
+                <div class="item1">
+                    <div class="image"></div>
+                    <div class="desc">
+                        <h3>Aleyita LEA Primary School</h3>
+                        <p>The School has 447 pupils and has no ICT ...</p><a>see more</a>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="image"></div>
+                    <div class="desc">
+                        <h3>Aleyita LEA Primary School</h3>
+                        <p>The School has 447 pupils and has no ICT ...</p><a href="#">see more</a>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="image"></div>
+                    <div class="desc">
+                        <h3>Aleyita LEA Primary School</h3>
+                        <p>The School has 447 pupils and has no ICT ...</p><a href="#">see more</a>
+                    </div>
+                </div>
+            </div><a href="#">see all opportunities<i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+    </div>
+    <div class="addYourSchool">
+        <div class="container">
+            <h2>Add Your School</h2>
+            <p>We are open to helping any school in Nigeria in need of teacher. Feel free to reach out to us to add your school to our website. Teacher will be just a few clicks away.</p>
+            <form>
+                <div class="inputs">
+                    <div class="schoolInfo"><label>School Name</label><input name="schoolName" placeholder=""><label>Contact Person Phone Number</label><input name="contactPersonPhoneNumber" placeholder="(0000-000-000)"><label>State / Country</label><input name="state/Country" placeholder=""></div>
+                    <div class="personInfo"><label>Your Full Name</label><input name="yourFullName" placeholder=""><label>Your Phone Number</label><input name="yourPhoneNumber" placeholder="(0000-000-000)"><label>Your email address</label><input name="yourEmailAddress" placeholder=""></div>
+                </div><input type="submit" name="submit" value="LET US KNOW">
+            </form>
+        </div>
+    </div>
+    <div class="aboutUs">
+        <div class="background">
+            <div class="container">
+                <div class="content">
+                    <h2>About Us</h2>
+                    <div class="desc">
+                        <p>According to the Teachers Registration Council of Nigeria, Nigeria needs at least 250,000 teachers annually to cater for the growing population of pupils.</p>
+                        <p>  This is what birthed the idea of giveatech.org; to grow a community of volunteer teachers who are willing to teach children in low resource schools and communities at their spare time.</p>
+                    </div>
+                </div>
+                <div class="image"></div>
+            </div>
+        </div>
+        <div class="hiddenImage"></div>
+        <div class="container"><a href="#">SEE MORE<i class="fas fa-long-arrow-alt-right"></i></a></div>
+    </div>
+    <div class="donate">
+        <div class="container">
+            <div class="desc">
+                <h2>Donate</h2>
+                <p>Help us continue our efforts in improving the educational system in Nigeria.</p>
+                <p> Our society cannot succeed without proper education !</p>
+            </div>
+            <div class="methods">
+                <div class="naira">
+                    <h3>Naira</h3>
+                    <form><label>Full Name</label><input type="text" name="fullName"><label>Email</label><input type="text" name="email"><label>Amount (NGN)</label><input type="text" name="amount" placeholder="Min Amount 1000"><input type="submit" name="submit" value="Donate"></form>
+                </div>
+                <div class="vLine"></div>
+                <div class="paypal">
+                    <h3>Paypal</h3>
+                    <form>
+                        <div class="amount">
+                            <div class="input" id="p25" onclick="donation(&quot;p25&quot;)">25 $</div>
+                            <div class="input checked" id="p50" onclick="donation(&quot;p50&quot;)">50 $</div>
+                            <div class="input" id="p100" onclick="donation(&quot;p100&quot;)">100 $</div>
+                            <div class="input" id="other" onclick="donation(&quot;other&quot;)">Other</div><input type="radio" name="amount" value="$50" checked="checked">
+                        </div>
+                        <div class="select">
+                            <p>I'd like this amount to</p>
+                            <div class="selectElement"><select>
+                                    <option value="be a one time donaition">be a one time donaition</option>
+                                </select><i class="fas fa-angle-down"></i></div>
+                        </div><input type="submit" name="submit" value="Continue to PayPal">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <section class="left">
+                <h2>Give a Teach</h2>
+                <p>Using technology to improve the quality of education</p>
+            </section>
+            <section class="right">
+                <div class="menu"><a class="home" href="/">Home</a><a class="teach" href="/teach">Teach</a><a class="donate" href="donate">Donate</a><a class="aboutUs" href="/aboutUs">About Us</a></div>
+                <div class="info"><a href="/FAQs">FAQs</a><a href="/termsOfUse">Terms of Use</a><a href="/privacy">Privacy</a></div>
+            </section>
+        </div>
+    </div>
+    <script>
+        function donation(amount) {
+            document.getElementById(amount).parentNode.children[0].classList.remove('checked');
+            document.getElementById(amount).parentNode.children[1].classList.remove('checked');
+            document.getElementById(amount).parentNode.children[2].classList.remove('checked');
+            document.getElementById(amount).parentNode.children[3].classList.remove('checked');
+            document.getElementById(amount).classList.add('checked');
+            var value = amount.replace('p', '');
+            console.log(document.getElementById(amount).parentNode.children[4].setAttribute('value', '$' + value));
+        }
+    </script>
+</body>
+
+</html>

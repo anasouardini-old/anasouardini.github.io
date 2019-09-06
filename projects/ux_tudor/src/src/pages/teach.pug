@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width')
+    title tudor
+    //link(rel='icon', href='imgs/icon.png')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto&display=swap')
+    link(rel='stylesheet', href='../css/style.css')
+    script(type="text/javascript" src='../js/script.js')
+  body
+    header
+      .headerContainer
+        .navBar
+          .logo
+          .menu
+            a.home(href="/") home
+            a.teach(href="/teach") teach
+            a.donate(href="donate") donate
+            a.aboutUs(href="/aboutUs") about us
+            a.myProfile(href="/myProfile") my profile
+            
+    .teachingOpportunities
+      .container
+        h1 Teaching opportunities
+        p Filter them by selecting a date, course and a community
+        .selectors
+          section.left
+            .filters
+              select
+                option(value='Filters') Filters 0
+            .selectContainer
+              select
+                option(value='be a one time donaition') Pick a course
+              i(class="fas fa-angle-down")
+            .selectContainer
+              select
+                option(value='be a one time donaition') Pick a date
+              i(class="far fa-calendar-alt")
+            .selectContainer
+              select
+                option(value='be a one time donaition') Pick a community
+              i(class="fas fa-angle-down")
+          section.right
+            .selectContainer
+              select
+                option(value='be a one time donaition') Most recent
+              i(class="fas fa-angle-down")
+        .opportunitiesElements
+          .element
+            .image
+            .desc
+              .text
+                h2 Aleyita LEA Primary School
+                p leyita LEA Primary School is located in Aleyita Community along Airport Road in the Federal Capital Territory - Abuja. The School has 447 pupils and has no ICT teacher.
+              .icons
+                .ict
+                  i(class="fas fa-map-marker-alt")
+                  span ICT
+                .calendar
+                  i(class="far fa-calendar-alt")
+                  span Fridays
+                .destination
+                  i(class="fas fa-map-marker-alt")
+                  span Aleyita, Abuja
+              button Get in Touch
+                  
+          .element
+            .image
+            .desc
+              .text
+                h2 Space for Opportunity
+                p If you think your school can benefit contact us. We will need at least` the following information and a few pictures of the school.
+              .icons
+                .ict
+                  i(class="fas fa-map-marker-alt")
+                  span Let us know the topic
+                .calendar
+                  i(class="far fa-calendar-alt")
+                  span Specify Dates
+                .destination
+                  i(class="fas fa-map-marker-alt")
+                  span Provide a location
+              button Let Us Know
+            
+
+    .footer
+      .container
+        section.left
+          h2 Give a Teach
+          p Using technology to improve the quality of education
+        
+        section.right
+          .menu
+            a.home(href="/") Home
+            a.teach(href="/teach") Teach
+            a.donate(href="donate") Donate
+            a.aboutUs(href="/aboutUs") About Us
+            
+          .info
+            a(href="/FAQs") FAQs
+            a(href="/termsOfUse") Terms of Use
+            a(href="/privacy") Privacy
+              

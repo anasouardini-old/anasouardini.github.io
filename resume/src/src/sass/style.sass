@@ -1,0 +1,199 @@
+*
+  box-sizing: border-box
+  margin: 0
+
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  height: 100%
+  width: 100%
+  background: rgba(0, 0, 0, .6) !important
+  text-align: center
+
+.container
+  width: 80%
+  max-width: 1200px
+  margin: 0 auto
+
+a
+  text-decoration: none
+
+body
+  font-family: 'Roboto', sans-serif !important
+  background: #444
+  padding: 40px 0
+
+.wrapper
+  background: #FFF
+
+
+.header
+  background: #0070FF
+  padding: 40px 0 20px 0
+  color: #FFF
+  .name
+    text-align: center
+    .name
+      font-size: 35px
+    .birthDay
+      font-size: 25px
+    .title
+      font-size: 45px
+  .info
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    a
+      color: #FFF
+
+    div
+      display: flex
+      //margin-left: 30px
+      margin-bottom: 20px
+      i
+        font-size: 21px
+      h3
+        padding-left: 10px
+
+
+.body
+  padding: 40px 0
+  .summary
+    //text-align: center
+    .title
+      color: #0070FF
+      width: 133px
+      display: flex
+      //margin: 0 auto 20px auto
+      margin-bottom: 20px
+      i
+        font-size: 25px
+      h3
+        margin-left: 10px
+        padding-top: 4px
+    .description
+      p
+        color: #666
+  hr
+    border: none
+    height: 1px
+    width: 50%
+    background: #CCC
+    margin: 40px auto
+
+  .title, .subtitle
+    color: #0070FF
+    margin-bottom: 20px
+    display: flex
+    i
+      font-size: 21px
+    h3
+      margin-left: 10px
+
+  .tech
+    margin-bottom: 60px
+    .container
+      display: flex
+      justify-content: space-between
+
+      > div
+        width: 50%
+
+      .skills
+        .skill
+          margin-bottom: 10px
+          .skillTitle
+            color: #333
+
+          progress
+            background-color: white
+
+          progress::-webkit-progress-value
+            background: #0070FF
+
+          progress::-webkit-progress-bar
+            background: #FFF
+            border: 1px solid #0070FF
+            appearance: none
+            width: 270px
+            height: 12px
+
+          progress::-moz-progress-value
+            background: #0070FF
+
+          progress::-moz-progress-bar
+            background: #FFF
+            border: 1px solid #0070FF
+            appearance: none
+            width: 270px
+            height: 12px
+
+      .experienceAndCerts
+        .experiences
+          .experience
+            .experienceTitle
+              color: #333
+              margin-bottom: 10px
+            .date
+              color: #333
+              margin-bottom: 10px
+            .description
+              color: #666
+        .certs
+          margin-top: 20px
+          .title
+            margin: 0
+            h3
+              display: inline
+          .subtitle
+            span
+              display: inline
+          .cert
+            .certTitle
+              margin-bottom: 10px
+              a
+                h4
+                  color: #333
+              span
+                color: #666
+
+            .certTitle
+              a
+                h4
+              span
+
+            .certTitle
+              a
+                h4
+              span
+
+  .nonTech
+    .container
+      display: flex
+
+      > div
+        width: 50%
+
+      .languages
+        .language
+          margin-bottom: 15px
+          .languageTitle
+            color: #333
+            margin-bottom: 6px
+          .rating
+            i
+              color: #0070FF
+
+      .education
+        .degree
+          .degreeTitle
+            color: #333
+            margin-bottom: 10px
+          .date
+            color: #333
+            margin-bottom: 10px
+          .description
+            color: #666
