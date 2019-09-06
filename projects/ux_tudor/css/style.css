@@ -1,0 +1,752 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+.container {
+  width: 80%;
+  max-width: 1010px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: "Open Sans",sans-serif !important;
+  background: #FFF;
+  color: #444; }
+
+.header {
+  background: #999;
+  padding: 50px 0 90px 0;
+  height: 370px;
+  color: #444;
+  position: relative; }
+
+.headerContainer {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .headerContainer .navBar {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between; }
+    .headerContainer .navBar .logo {
+      margin-top: 1px;
+      height: 43px;
+      width: 80px;
+      background: url('../imgs/logo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer; }
+    .headerContainer .navBar .menu {
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 0 10px;
+      height: 45;
+      width: 400px;
+      border-radius: 7px;
+      background: #FFF;
+      box-shadow: 0 0 10px 0 #E9E9E9;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .headerContainer .navBar .menu a {
+        text-transform: capitalize;
+        padding: 5px 0;
+        color: #444; }
+        .headerContainer .navBar .menu a:hover {
+          border-top: 3px solid rgba(0, 0, 0, 0);
+          border-bottom: 3px solid #AA0707;
+          cursor: pointer; }
+  .headerContainer .headline {
+    font-size: 23px; }
+    .headerContainer .headline p {
+      color: #5e5e5e;
+      font-size: 26px; }
+  .headerContainer .startTeaching {
+    position: absolute;
+    top: 160px;
+    right: 150px;
+    width: 280px;
+    height: 260px;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background: #FFF;
+    box-shadow: 0 0 10px 0 #E1E1E1; }
+    .headerContainer .startTeaching h2 {
+      font-size: 19px;
+      font-weight: bold;
+      width: 70%;
+      margin: 20px 0 50px 0; }
+    .headerContainer .startTeaching button {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      box-shadow: none; }
+      .headerContainer .startTeaching button:hover {
+        cursor: pointer; }
+    .headerContainer .startTeaching .selectElement {
+      display: inline;
+      position: relative;
+      cursor: pointer; }
+      .headerContainer .startTeaching .selectElement i {
+        position: absolute;
+        top: 1px;
+        right: 20px;
+        font-size: 20px; }
+      .headerContainer .startTeaching .selectElement select {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        border-radius: 4px;
+        outline: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        color: #555;
+        font-size: 13px;
+        cursor: pointer; }
+    .headerContainer .startTeaching .submit {
+      margin-top: 20px;
+      background: #AA0707;
+      color: #FFF;
+      font-size: 15px; }
+
+.opportunities .container {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px; }
+  .opportunities .container p {
+    color: #555;
+    font-size: 14px; }
+  .opportunities .container .items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; }
+    .opportunities .container .items > div {
+      border-radius: 4px;
+      overflow: hidden;
+      width: 250px; }
+      .opportunities .container .items > div .image {
+        width: 100%;
+        height: 210px;
+        background: #444; }
+      .opportunities .container .items > div .desc {
+        padding: 10px 0 10px 10px;
+        background: #E9E9E9; }
+        .opportunities .container .items > div .desc h3 {
+          font-size: 14px; }
+        .opportunities .container .items > div .desc p {
+          font-size: 13px;
+          margin: 5px 0 20px 0;
+          color: #555; }
+        .opportunities .container .items > div .desc a {
+          font-size: 15px; }
+  .opportunities .container a {
+    cursor: pointer;
+    color: #AA0707;
+    font-weight: bold; }
+    .opportunities .container a i {
+      margin-left: 60px;
+      padding-top: 10px; }
+
+.addYourSchool {
+  margin: 80px 0; }
+  .addYourSchool h2 {
+    color: #444;
+    margin-bottom: 20px; }
+  .addYourSchool p {
+    color: #555;
+    width: 660px; }
+  .addYourSchool form .inputs {
+    width: 600px;
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between; }
+    .addYourSchool form .inputs > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .addYourSchool form .inputs > div label {
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: #666; }
+      .addYourSchool form .inputs > div input {
+        margin-bottom: 20px;
+        width: 250px;
+        height: 35px;
+        border-radius: 4px;
+        border: 1px solid #666;
+        outline: none;
+        padding: 0 0 0 10px; }
+  .addYourSchool form input[type='submit'] {
+    border: none !important;
+    background: none !important;
+    margin: 0 !important;
+    margin-top: 10px !important;
+    padding: 0 !important;
+    cursor: pointer !important;
+    color: #AA0707;
+    font-weight: bold;
+    font-size: 16px; }
+
+.aboutUs {
+  margin: 40px 0; }
+  .aboutUs .background {
+    background: #FCF8F8;
+    height: 175px; }
+    .aboutUs .background .container {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px; }
+      .aboutUs .background .container .content {
+        width: calc(100% - 180px - 150px); }
+        .aboutUs .background .container .content h2 {
+          color: #444; }
+        .aboutUs .background .container .content p {
+          margin-top: 20px;
+          font-size: 15px;
+          color: #555; }
+      .aboutUs .background .container .image {
+        border-radius: 50%;
+        width: 190px;
+        height: 190px;
+        background: #444;
+        margin-right: 80px; }
+  .aboutUs .hiddenImage {
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+    background: #444;
+    display: none; }
+  .aboutUs .container {
+    margin-top: 20px; }
+    .aboutUs .container a {
+      cursor: pointer;
+      color: #AA0707;
+      font-weight: bold; }
+      .aboutUs .container a i {
+        margin-left: 30px;
+        padding-top: 10px; }
+
+.donate .container .desc {
+  margin: 100px 0 70px 0; }
+  .donate .container .desc h2 {
+    color: #444; }
+  .donate .container .desc p {
+    color: #555;
+    font-size: 15px; }
+
+.donate .container .methods {
+  width: 700px;
+  display: flex;
+  justify-content: space-between; }
+  .donate .container .methods h3 {
+    color: #444;
+    font-size: 15px;
+    margin-bottom: 40px; }
+  .donate .container .methods input {
+    outline: none; }
+  .donate .container .methods .naira, .donate .container .methods .paypal {
+    margin-top: 15px; }
+  .donate .container .methods .naira form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .donate .container .methods .naira form label {
+      font-size: 12px;
+      color: #666; }
+    .donate .container .methods .naira form input {
+      margin: 0 0 30px 0;
+      height: 35px;
+      width: 250px;
+      border-radius: 4px;
+      border: 1px solid #666;
+      padding-left: 20px; }
+    .donate .container .methods .naira form input[type='submit'] {
+      margin-top: 10px;
+      padding: 0;
+      background: #AA0707;
+      color: #FFF;
+      cursor: pointer;
+      border: none; }
+  .donate .container .methods .vLine {
+    height: 350px;
+    width: 0;
+    border: 1px solid #e7e7e7;
+    border-color: #999; }
+  .donate .container .methods .paypal .amount {
+    margin: 6px 0 50px 0; }
+    .donate .container .methods .paypal .amount input {
+      display: none; }
+    .donate .container .methods .paypal .amount .input {
+      display: inline-block;
+      height: 35px;
+      width: 70px;
+      border: 1px solid #AA0707 !important;
+      color: #AA0707;
+      text-align: center;
+      padding-top: 9px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+      cursor: pointer; }
+    .donate .container .methods .paypal .amount .checked {
+      background: #AA0707;
+      color: #FFF; }
+  .donate .container .methods .paypal .select {
+    margin-bottom: 120px; }
+    .donate .container .methods .paypal .select p {
+      display: inline;
+      margin-right: 20px;
+      font-size: 15px;
+      color: #555; }
+    .donate .container .methods .paypal .select .selectElement {
+      display: inline;
+      position: relative; }
+      .donate .container .methods .paypal .select .selectElement i {
+        position: absolute;
+        top: 3px;
+        right: 14px; }
+      .donate .container .methods .paypal .select .selectElement select {
+        width: 180px;
+        height: 35px;
+        padding-left: 10px;
+        border-radius: 4px;
+        outline: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        color: #555;
+        font-size: 13px; }
+  .donate .container .methods .paypal input {
+    height: 35px;
+    width: 250px;
+    border-radius: 4px;
+    border: 1px solid #666;
+    padding: 0;
+    background: #AA0707;
+    color: #FFF;
+    cursor: pointer;
+    border: none; }
+
+.footer {
+  margin-top: 100px;
+  height: 160px;
+  background: #3d3d3d;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  .footer .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .footer .container section.left {
+      width: 250px;
+      padding-top: 10px; }
+      .footer .container section.left p {
+        font-size: 15px; }
+    .footer .container section.right {
+      margin-left: 100px;
+      display: flex;
+      justify-content: flex-start; }
+      .footer .container section.right a {
+        display: block;
+        margin: 0;
+        padding: 5px 0;
+        color: #FFF; }
+        .footer .container section.right a:hover {
+          text-decoration: underline; }
+      .footer .container section.right .menu {
+        display: inline;
+        margin-right: 25px; }
+
+header {
+  padding-top: 50px; }
+
+.teachingOpportunities {
+  margin-top: 70px; }
+  .teachingOpportunities h1 {
+    padding-bottom: 10px; }
+  .teachingOpportunities p {
+    color: #555; }
+  .teachingOpportunities .selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+    .teachingOpportunities .selectors .filters {
+      display: none !important; }
+      .teachingOpportunities .selectors .filters select {
+        width: 120px !important; }
+    .teachingOpportunities .selectors .selectContainer, .teachingOpportunities .selectors .filters {
+      margin-top: 10px;
+      display: inline-block;
+      position: relative; }
+      .teachingOpportunities .selectors .selectContainer select, .teachingOpportunities .selectors .filters select {
+        width: 170px;
+        height: 35px;
+        padding-left: 10px;
+        border-radius: 4px;
+        outline: none;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        color: #555;
+        font-size: 13px; }
+    .teachingOpportunities .selectors section .selectContainer i, .teachingOpportunities .selectors section .filters i {
+      position: absolute;
+      top: 10px;
+      right: 12px; }
+    .teachingOpportunities .selectors section.left .selectContainer {
+      margin-right: 10px; }
+    .teachingOpportunities .selectors section.right {
+      width: 170px; }
+      .teachingOpportunities .selectors section.right .selectContainer select {
+        margin-left: 50px;
+        width: 120px; }
+
+.opportunitiesElements {
+  margin-top: 50px; }
+  .opportunitiesElements .element {
+    position: relative;
+    margin: 15px 0;
+    height: 220px;
+    border-radius: 8px;
+    background: #F5F5F5;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start; }
+    .opportunitiesElements .element .image {
+      height: 100%;
+      background: #444; }
+    .opportunitiesElements .element .desc {
+      padding: 30px 0 20px 20px;
+      width: 51%; }
+      .opportunitiesElements .element .desc .text h2 {
+        font-size: 18px;
+        margin-bottom: 8px; }
+      .opportunitiesElements .element .desc .text p {
+        font-size: 13px;
+        max-width: 500px; }
+      .opportunitiesElements .element .desc .icons {
+        font-size: 15px;
+        color: #444;
+        margin-top: 40px; }
+        .opportunitiesElements .element .desc .icons > div {
+          display: inline-block;
+          width: 166px; }
+          .opportunitiesElements .element .desc .icons > div:nth-of-type(2) {
+            margin-left: 60px; }
+          .opportunitiesElements .element .desc .icons > div:nth-of-type(3) {
+            display: block;
+            margin-top: 25px; }
+          .opportunitiesElements .element .desc .icons > div i {
+            color: #AA0707;
+            margin-right: 10px; }
+      .opportunitiesElements .element .desc button {
+        position: absolute;
+        top: 170px;
+        right: 20px;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        box-shadow: none;
+        background: #AA0707;
+        color: #FFF;
+        font-size: 15px;
+        cursor: pointer; }
+
+@media (max-width: 660px) {
+  .navBar .menu {
+    height: 45px;
+    width: 100% !important;
+    border-radius: 0 !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10; }
+  .footer {
+    margin-bottom: 45px; } }
+
+@media (max-width: 380px) {
+  .navBar .menu {
+    font-size: 14px !important; } }
+
+@media (max-width: 299px) {
+  .navBar .menu {
+    display: none !important; }
+  .footer {
+    margin-bottom: 0; } }
+
+@media (max-width: 1050px) {
+  .header .headerContainer .startTeaching {
+    top: 300px;
+    right: 15%; }
+  .opportunities .container {
+    margin-top: 250px; } }
+
+@media (max-width: 1042px) {
+  .opportunitiesElements .element .desc {
+    width: auto; }
+    .opportunitiesElements .element .desc .icons {
+      margin-top: 30px; }
+      .opportunitiesElements .element .desc .icons div:last-of-type {
+        margin-top: 15px; } }
+
+@media (max-width: 950px) {
+  .opportunitiesElements .element .desc {
+    padding-left: 15px;
+    padding-right: 15px; }
+    .opportunitiesElements .element .desc .icons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between; }
+      .opportunitiesElements .element .desc .icons div {
+        width: auto;
+        margin-top: 0 !important; }
+        .opportunitiesElements .element .desc .icons div:nth-of-type(2) {
+          margin-left: 0; }
+        .opportunitiesElements .element .desc .icons div:last-of-type {
+          margin-left: 0;
+          display: inline-block;
+          margin-top: 0; } }
+
+@media (max-width: 900px) {
+  .opportunitiesElements .element .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 15px 15px 15px; }
+    .opportunitiesElements .element .desc .icons {
+      margin-top: 0;
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .opportunitiesElements .element .desc .icons div {
+        display: block;
+        margin-top: 0; }
+    .opportunitiesElements .element .desc button {
+      top: 175px; } }
+
+@media (max-width: 800px) {
+  .opportunitiesElements .element {
+    height: 270px; }
+    .opportunitiesElements .element .desc {
+      display: inline-block; }
+      .opportunitiesElements .element .desc .icons {
+        margin-top: 20px; }
+        .opportunitiesElements .element .desc .icons div {
+          display: block;
+          margin-top: 0; }
+      .opportunitiesElements .element .desc button {
+        top: auto;
+        bottom: 10px; }
+  .opportunitiesElements .element {
+    height: auto;
+    flex-direction: column;
+    width: 390px; }
+    .opportunitiesElements .element .image {
+      height: 260px; }
+    .opportunitiesElements .element .desc button {
+      width: 100%;
+      position: static;
+      margin-top: 15px; } }
+
+@media (max-width: 1000px) {
+  .opportunities .container .items > div:last-of-type {
+    display: none; }
+  .aboutUs .background .container .image {
+    margin-right: 0 !important; }
+  .aboutUs .background .container .content {
+    width: calc(100% - 200px) !important; }
+    .aboutUs .background .container .content p {
+      margin-top: 10px !important; } }
+
+@media (max-width: 850px) {
+  .donate .methods {
+    flex-direction: column;
+    width: auto !important; }
+  .donate .vLine {
+    display: none; } }
+
+@media (max-width: 780px) {
+  .addYourSchool .container p {
+    width: auto !important; }
+  .aboutUs .container {
+    margin-top: 60px !important; } }
+
+@media (max-width: 777px) {
+  .container {
+    width: 95%; } }
+
+@media (max-width: 750px) {
+  .addYourSchool .container form .inputs {
+    flex-direction: column; } }
+
+@media (max-width: 660px) {
+  .opportunities .container .items > div:nth-of-type(2) {
+    display: none; } }
+
+@media (max-width: 600px) {
+  .aboutUs .background .container {
+    flex-direction: column;
+    margin-top: 40px !important; }
+    .aboutUs .background .container .content {
+      width: auto !important; }
+    .aboutUs .background .container .image {
+      display: none !important; }
+  .aboutUs .hiddenImage {
+    display: inline-block;
+    margin-top: 20px; }
+  .aboutUs .container {
+    margin-top: 10px !important; } }
+
+@media (max-width: 500px) {
+  .opportunities .container {
+    align-items: center; }
+    .opportunities .container .items {
+      width: auto; }
+  .addYourSchool form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .addYourSchool form .inputs {
+      width: auto !important; }
+  .aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .aboutUs .background .container {
+      text-align: left;
+      margin-top: 10px !important; }
+    .aboutUs .hiddenImage {
+      margin-top: 45px !important; }
+    .aboutUs .container {
+      margin-top: 25px !important;
+      text-align: center; }
+  .donate .container .methods {
+    width: 100%; }
+    .donate .container .methods .naira form {
+      align-items: center; }
+    .donate .container .methods .paypal form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .donate .container .methods .paypal form .amount .input {
+        margin-right: 0; }
+      .donate .container .methods .paypal form .select {
+        margin-bottom: 40px;
+        width: 100%; }
+        .donate .container .methods .paypal form .select p {
+          display: block;
+          margin-right: 0 !important;
+          margin-bottom: 10px; }
+        .donate .container .methods .paypal form .select .selectElement {
+          display: block;
+          margin: 0 auto;
+          width: 250px; }
+          .donate .container .methods .paypal form .select .selectElement select {
+            width: 250px; }
+          .donate .container .methods .paypal form .select .selectElement i {
+            top: 10px !important; }
+  .footer {
+    height: 260px; }
+    .footer .container {
+      flex-direction: column;
+      align-items: flex-start !important; }
+      .footer .container .left {
+        margin-bottom: 30px;
+        width: auto !important; }
+      .footer .container .right {
+        margin: 0 !important; } }
+
+@media (max-width: 400px) {
+  .aboutUs .hiddenImage {
+    margin-top: 60px !important; }
+  .aboutUs .container {
+    margin-top: 40px !important;
+    text-align: center; } }
+
+@media (max-width: 380px) {
+  .header .headerContainer .startTeaching {
+    top: 300px;
+    right: 7%; } }
+
+@media (max-width: 350px) {
+  .aboutUs .hiddenImage {
+    margin-top: 70px !important; } }
+
+@media (max-width: 350px) {
+  .aboutUs .hiddenImage {
+    margin-top: 90px !important; } }
+
+@media (max-width: 330px) {
+  .header h1 {
+    font-size: 34px; }
+  .header p {
+    font-size: 22px !important; }
+  .donate .paypal select {
+    width: 100%  !important; } }
+
+@media (max-width: 316px) {
+  .header .headerContainer .startTeaching {
+    width: 260px;
+    height: 240px;
+    top: 340px;
+    right: 5%; }
+    .header .headerContainer .startTeaching h2 {
+      margin-bottom: 30px; } }
+
+@media (max-width: 311px) {
+  .header .headerContainer .startTeaching {
+    right: 5%; } }
+
+@media (max-width: 299px) {
+  .header .headerContainer .startTeaching {
+    right: 3%; } }
+
+@media (max-width: 299px) {
+  .header .headerContainer .startTeaching {
+    right: 2%; } }
+
+@media (max-width: 270px) {
+  .header .headerContainer .startTeaching {
+    width: 250px; } }
+
+@media (max-width: 500px) {
+  .selectors {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; }
+    .selectors section.left .filters {
+      display: block !important; }
+    .selectors section.left .selectContainer {
+      display: none !important; }
+  .opportunitiesElements .element {
+    flex-direction: column;
+    width: auto; }
+    .opportunitiesElements .element .image {
+      height: 260px; }
+    .opportunitiesElements .element .desc button {
+      width: 100%; } }
