@@ -110,6 +110,13 @@ button:focus {
 	border-radius: 0
 }
 
+.header_area .navbar .navbar-brand h1{
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bolder;
+	font-size: 22px;
+}
+
 .header_area .navbar .nav .nav-item {
 	margin-right: 45px
 }
@@ -244,7 +251,12 @@ button:focus {
 }
 
 .home_banner_area .banner_inner .container .row {
+	min-height: 700px;
 	height: 100vh
+}
+
+.home_banner_area .banner_inner .container .row img{
+	height: 355px
 }
 
 .home_banner_area .banner_inner .col-lg-6 {
@@ -1058,19 +1070,19 @@ h6 {
 	font-family: Heebo, sans-serif;
 	font-weight: 700;
 	color: #222;
-	margin-bottom: 5px;
+	margin-bottom: 50px;
 	transition: all .3s linear 0s;
 	text-transform: uppercase;
-	cursor: pointer
-}
-
-.projects_item .projects_text p {
-	margin-bottom: 0;
-	font-size: 14px
+	cursor: pointer;
+	display: none
 }
 
 .projects_item:hover:before {
 	opacity: 1
+}
+
+.projects_item:hover .projects_text h4{
+	display: block
 }
 
 .projects_item:hover .projects_text h4 {
@@ -1157,12 +1169,19 @@ h6 {
 	text-transform: uppercase
 }
 
-.testi_item a {
+.testi_item i{
 	color: #ffc000
 }
 
 .footer_area {
-	background: #000410
+	background: #000410;
+	padding: 20px 0
+}
+
+.footer_area p{
+	text-align: center;
+	margin: 0;
+	color: #FFF
 }
 
 .f_title {
