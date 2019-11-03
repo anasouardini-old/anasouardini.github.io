@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: #0275d8; }
+  a:hover {
+    text-decoration: underline; }
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  background: #FFF; }
+
+.container .logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #e3f2fd;
+  margin: 20px 0 40px 0;
+  box-shadow: 10px 7px 15px 0 #CCC; }
+
+.heading {
+  text-align: center;
+  margin-bottom: 60px; }
+  .heading h1 {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    color: #444; }
+  .heading p {
+    font-size: 22px;
+    color: #555; }
+  .heading .search {
+    margin-top: 30px; }
+    .heading .search input {
+      height: 40px;
+      border-radius: 4px;
+      border: none;
+      outline: none; }
+    .heading .search input[type='url'] {
+      width: 600px;
+      box-shadow: 0 0 15px 0 #DDD;
+      padding-left: 20px;
+      color: #555;
+      font-size: 17px; }
+      .heading .search input[type='url']:focus {
+        box-shadow: 0 0 15px 7px #e3f2fd; }
+    .heading .search input[type='submit'] {
+      background: #0275d8;
+      color: #FFF;
+      font-size: 16px;
+      width: 125px;
+      margin-left: 20px;
+      cursor: pointer; }
+      .heading .search input[type='submit']:active {
+        background: #02559E; }
+
+@media (max-width: 839px) {
+  .search {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .search input {
+      width: 100% !important; }
+    .search input[type='submit'] {
+      margin: 5px 0 0 0 !important; } }
+
+@media (max-width: 730px) {
+  .search {
+    width: 100%; } }
+
+hr {
+  background: #DDD;
+  height: 1px;
+  border: none; }
+
+.steps {
+  padding-top: 20px; }
+  .steps .container > div {
+    margin-top: 100px;
+    border: 1px solid #666; }
+    .steps .container > div h2 {
+      padding-left: 20px;
+      font-size: 35px;
+      color: #444;
+      margin: 10px 0;
+      text-align: center; }
+    .steps .container > div > p {
+      padding-left: 20px;
+      color: #555;
+      font-size: 18px;
+      text-align: center; }
+      .steps .container > div > p ~ hr {
+        height: 1px;
+        margin-top: 20px;
+        background: #666 !important; }
+    .steps .container > div .specs {
+      margin: 0 auto 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      flex-wrap: wrap; }
+      .steps .container > div .specs hr {
+        width: 100%; }
+      .steps .container > div .specs > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 20px;
+        width: 100%;
+        border-radius: 4px;
+        margin-right: 20px;
+        margin-bottom: 30px; }
+        .steps .container > div .specs > div code {
+          color: #bd4147 !important; }
+        .steps .container > div .specs > div .icon {
+          height: 40px;
+          margin: 0 20px 0 0; }
+          .steps .container > div .specs > div .icon .status {
+            border: 6px solid #DDD;
+            border-radius: 50px;
+            height: 40px;
+            width: 40px;
+            margin: 0 auto;
+            display: none; }
+          .steps .container > div .specs > div .icon i {
+            font-size: 38px; }
+          .steps .container > div .specs > div .icon i.fa-exclamation-triangle {
+            display: none;
+            color: #e6e600; }
+          .steps .container > div .specs > div .icon i.fa-check-circle {
+            color: #00c900; }
+        .steps .container > div .specs > div h3 {
+          font-size: 22px;
+          margin-bottom: 10px;
+          color: #444; }
+        .steps .container > div .specs > div p {
+          font-size: 15px;
+          color: #555;
+          margin-bottom: 10px; }
+        .steps .container > div .specs > div .result i {
+          display: inline; }
+        .steps .container > div .specs > div .result i.fa-exclamation-triangle {
+          color: #e6e600;
+          display: none; }
+        .steps .container > div .specs > div .result i.fa-check-circle {
+          color: #00c900; }
+        .steps .container > div .specs > div .result p {
+          display: inline;
+          color: #555;
+          margin: 0;
+          font-size: 14px; }
+
+.steps .basics .specs div:first-of-type .icon i.fa-exclamation-triangle, .steps .basics .specs div:last-of-type .icon i.fa-exclamation-triangle {
+  display: inline; }
+
+.steps .basics .specs div:first-of-type .icon i.fa-check-circle, .steps .basics .specs div:last-of-type .icon i.fa-check-circle {
+  display: none; }
+
+.steps .basics .specs div:first-of-type .info .result i.fa-exclamation-triangle, .steps .basics .specs div:last-of-type .info .result i.fa-exclamation-triangle {
+  display: inline; }
+
+.steps .basics .specs div:first-of-type .info .result i.fa-check-circle, .steps .basics .specs div:last-of-type .info .result i.fa-check-circle {
+  display: none; }
+
+.footer {
+  color: #555;
+  margin-top: 60px;
+  height: 60px;
+  text-align: center; }

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>bob</title>
+    <!--link(rel='icon', href='imgs/icon.png')-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo"></div>
+        <div class="heading">
+            <div class="container">
+                <h1>How is my feed?</h1>
+                <p>Is your podcast feed as optimized as it can be? This will tell you.</p>
+                <div class="search"><input type="url" name="" value="" placeholder="Enter podcast feed URL iTunes URL"><input type="submit" name="" value="Enter Valid URL"></div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="steps">
+        <div class="container">
+            <div class="basics">
+                <h2>Basics</h2>
+                <p>Basic universal tests-the podcasting equivalent of "Is the patient breathing?"</p>
+                <hr>
+                <div class="specs">
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is something there?</h3>
+                            <p>First we check if something is at the URL, and that it takes a reasonable amount of time to retrieve.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>It took about 2 seconds to get the feed, which is pretty slow in "internet time". Worth looking into before it gets worse.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is it XML?</h3>
+                            <p>XML is a language that computers (and soon, robots!) use to talk to each other. This tests to see if the content at the URL is XML. Technically, it tests whether or not the content is "<a href="http://en.wikipedia.org/wiki/Well-formed_document">well formed</a>" according to the XML standard.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>Sweet! You probably get this all the time, but your XML looks great.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is it an RSS feed?</h3>
+                            <p>RSS is the special "flavor" of XML used to publish blog and podcast feeds. This test makes sure the feed conforms to the <a href="http://cyber.law.harvard.edu/rss/rss.html">RSS 2.0 specification</a>, too.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>Most RSS parsers can understand this feed. <a href="http://validator.w3.org/feed/check.cgi?url=https://audioboom.com/channels/4982683.rss">You can also validate this RSS with a very strict parser.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is the SSL certificate iTunes-compatible?</h3>
+                            <p>iTunes supports feeds that start with "https://", but only from <a href="https://itunespartner.apple.com/en/podcasts/faq#67333021">eight popular SSL certificate providers. If this feed uses HTTPS, this tests whether it uses a compatible certificate provider.</a></p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>This feed uses the SSL certificate authority "DigiCert Inc", which is not compatible with iTunes. Please send your feed URL using the "?" in the lower-right corner, and I'll be happy to share my advice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sharingAndSEO">
+                <h2>Sharing & SEO</h2>
+                <p>But does it feel good?</p>
+                <hr>
+                <div class="specs">
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Does the podcast feed have a "good" URL?</h3>
+                            <p>Here I test for problems like the use of someone else's domain, the use of deprecated services, etc.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>Nice URL, friend! You appear to be master of your own domain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appleItunes">
+                <h2>apple iTunes</h2>
+                <p>This section tests stuff that matters as specified in <a href="https://help.apple.com/itc/podcasts_connect/#/itc1723472cb">Apple's podcast requirements for iTunes.</a></p>
+                <hr>
+                <div class="specs">
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Cover art</h3>
+                            <p>The cover art must be 1,400-3,000 pixels square to look good on fancy retina-class displays.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>Good, your podcast art is 1,600 pixels square.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Support for HTTP HEAD requests</h3>
+                            <p>The server for your episodes must support "HTTP HEAD requests", which is a fancy way of saying that iTunes must be able to get information about your files without downloading them whole.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>An HTTP HEAD request to your feed worked fine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Byte-range support</h3>
+                            <p>The server for your episodes must support "byte-range requests", which enables podcast apps to fetch media in chunks. This is required to support streaming, and is required to be promoted in iTunes.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>The media server correctly supports partial requests.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is there a valid iTunes category?</h3>
+                            <p>Podcasts must have a valid <code>&lt;itunes:category&gt; </code>tag to be accepted for iTunes.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>News</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Is there an iTunes summary?</h3>
+                            <p>Podcasts should have a valid <code>&lt;itunes:summary&gt; </code>tag, or at least a <code>&lt;description&gt; </code></p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>Good, the description looks fine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="icon">
+                            <div class="status"></div><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                        </div>
+                        <div class="info">
+                            <h3>Does it have everything it needs to be searched properly?</h3>
+                            <p>Podcasts must have valid <code>&lt;title&gt;</code>, <code>&lt;author&gt; </code>and <code>&lt;description&gt; </code>tags at the <code>&lt;channel&gt; </code>and <code>&lt;item&gt; </code>level of your podcast feed, so that iTunes has enough source material for its search engine.</p>
+                            <div class="result"><i class="fas fa-exclamation-triangle"></i><i class="fas fa-check-circle"></i>
+                                <p>You never meta-data you didn't like - everything looks great!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><span>Copyright &copy 2019 Arcus Labs</span></div>
+</body>
+
+</html>
